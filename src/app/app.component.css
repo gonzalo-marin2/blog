@@ -7,5 +7,5 @@ ul.menu li {
 }
 
 ul.menu li.activa {
-    background-color: lightgreen;
+    background-color: red;
 }

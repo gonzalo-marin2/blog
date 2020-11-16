@@ -1,5 +1,3 @@
-<p>blog works!</p>
-
 <select (change)="onChange($event)">
     <option value="todos">Todos</option>
     <option [value]="categoria" *ngFor="let categoria of categorias">
@@ -8,7 +6,7 @@
 </select>
 
 <div class="posts">
-    <div class="post" *ngFor="let post of arrayPosts">
+    <div class="post" *ngFor="let post of arrayPosts; let indice = index;">
         <h3>{{ post.titulo }}</h3>
         <h4>{{ post.autor }}</h4>
         <img src="https://thispersondoesnotexist.com/image">
@@ -19,5 +17,6 @@
         <!-- <img src="assets/images/corazon.png">
         <img src="assets/images/cometa.png">
         <img src="assets/images/meditacion.png"> -->
+        <button class="btn btn-sm btn-danger" (click)="onClickBorrar(indice)">Eliminar</button>
     </div>
 </div>

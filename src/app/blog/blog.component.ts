@@ -37,6 +37,8 @@ export class BlogComponent implements OnInit {
     }
   }
 
-
+  onClickBorrar(pIndice: number) {
+    this.blogService.borrarPost(pIndice);
+  }
 
 }
