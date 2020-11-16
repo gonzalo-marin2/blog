@@ -1,0 +1,11 @@
+ul.menu li {
+    list-style: none;
+    cursor: pointer;
+    border: solid black 2px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+ul.menu li.activa {
+    background-color: lightgreen;
+}

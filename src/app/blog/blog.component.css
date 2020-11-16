@@ -1,0 +1,27 @@
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: solid black 2px;
+    background-color: lightsalmon;
+}
+
+.post {
+    width: 250px;
+    border: solid black 2px;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+img {
+    width: 100%;
+    padding: 10px;
+    border: solid black 1px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+p {
+    padding:10px;
+}

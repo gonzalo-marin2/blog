@@ -1,0 +1,19 @@
+<p>blog works!</p>
+
+<select (change)="onChange($event)">
+    <option value="todos">Todos</option>
+    <option [value]="categoria" *ngFor="let categoria of categorias">
+        {{ categoria | titlecase }}
+    </option>
+</select>
+
+<div class="posts">
+    <div class="post" *ngFor="let post of arrayPosts">
+        <h3>{{ post.titulo }}</h3>
+        <h4>{{ post.autor }}</h4>
+        <p>{{ post.texto }}</p>
+        <p>{{ post.fecha }}</p>
+        <p>{{ post.categoria }}</p>
+        <img [src]="post.imagen">
+    </div>
+</div>
