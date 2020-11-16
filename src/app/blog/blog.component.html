@@ -13,7 +13,7 @@
         <h4>{{ post.autor }}</h4>
         <img src="https://thispersondoesnotexist.com/image">
         <p>{{ post.texto }}</p>
-        <p>{{ post.fecha }}</p>
+        <p>{{ post.fecha | date:'shortDate' }}</p>
         <p>{{ post.categoria }}</p>
         <img [src]="'./assets/images/'+ post.categoria.toLowerCase() +'.png'">
         <!-- <img src="assets/images/corazon.png">

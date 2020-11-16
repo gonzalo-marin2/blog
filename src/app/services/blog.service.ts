@@ -24,17 +24,17 @@ export class BlogService {
             {
                 titulo: 'Mis bonsais', texto: 'Lorem ipsum', autor: 'Felipe González',
                 imagen: './assets/images/ocio.png',
-                fecha: new Date('5/11/20'), categoria: 'Ocio'
+                fecha: new Date('11/5/20'), categoria: 'Ocio'
             },
             {
                 titulo: 'Cómo hacer 1000 abdominales', texto: 'Lorem ipsum', autor: 'Jose María Aznar',
                 imagen: './assets/images/deportes.png',
-                fecha: new Date('5/11/20'), categoria: 'Deportes'
+                fecha: new Date('11/5/20'), categoria: 'Deportes'
             },
             {
                 titulo: 'Cómo llegar a ser presidente siendo gilipollas', texto: 'Lorem ipsum', autor: 'Jose Luis Rodríguez Zapatero',
                 imagen: './assets/images/ensayo.png',
-                fecha: new Date('5/11/20'), categoria: 'Ensayo'
+                fecha: new Date('11/5/20'), categoria: 'Ensayo'
             }
         ]
 
