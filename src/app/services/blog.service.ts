@@ -23,18 +23,18 @@ export class BlogService {
         this.arrPosts = [
             {
                 titulo: 'Mis bonsais', texto: 'Lorem ipsum', autor: 'Felipe González',
-                imagen: './assets/images/cometa.png',
+                imagen: './assets/images/ocio.png',
                 fecha: new Date('5/11/20'), categoria: 'Ocio'
             },
             {
                 titulo: 'Cómo hacer 1000 abdominales', texto: 'Lorem ipsum', autor: 'Jose María Aznar',
-                imagen: './assets/images/corazon.png',
-                fecha: new Date('5/11/20'), categoria: 'Salud y bienestar'
+                imagen: './assets/images/deportes.png',
+                fecha: new Date('5/11/20'), categoria: 'Deportes'
             },
             {
                 titulo: 'Cómo llegar a ser presidente siendo gilipollas', texto: 'Lorem ipsum', autor: 'Jose Luis Rodríguez Zapatero',
-                imagen: './assets/images/meditacion.png',
-                fecha: new Date('5/11/20'), categoria: 'Autoayuda'
+                imagen: './assets/images/ensayo.png',
+                fecha: new Date('5/11/20'), categoria: 'Ensayo'
             }
         ]
 
@@ -50,7 +50,7 @@ export class BlogService {
     getPostsByCategoria(pCategoria: string): Promise<Post[]> {
         return new Promise((resolve, reject) => {
             const arrFiltrado = this.arrPosts.filter(post => {
-                return post.categoria === pCategoria;
+                return post.categoria.toLowerCase() === pCategoria.toLowerCase();
             });
             resolve(arrFiltrado);
         });

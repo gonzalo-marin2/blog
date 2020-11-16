@@ -11,9 +11,13 @@
     <div class="post" *ngFor="let post of arrayPosts">
         <h3>{{ post.titulo }}</h3>
         <h4>{{ post.autor }}</h4>
+        <img src="https://thispersondoesnotexist.com/image">
         <p>{{ post.texto }}</p>
         <p>{{ post.fecha }}</p>
         <p>{{ post.categoria }}</p>
-        <img [src]="post.imagen">
+        <img [src]="'./assets/images/'+ post.categoria.toLowerCase() +'.png'">
+        <!-- <img src="assets/images/corazon.png">
+        <img src="assets/images/cometa.png">
+        <img src="assets/images/meditacion.png"> -->
     </div>
 </div>
